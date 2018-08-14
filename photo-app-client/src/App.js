@@ -6,6 +6,7 @@ import Home from './containers/Home.js'
 import Contact from './components/static/Contact.js'
 import About from './components/static/About.js'
 
+
 class App extends Component {
   render() {
     return (
