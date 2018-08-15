@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 import './App.css';
 import { BrowserRouter  as Router, Route } from 'react-router-dom'
 
@@ -25,6 +29,7 @@ class App extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <Router>
         <div>
           <Route exact path='/' component={Home} />
@@ -34,6 +39,11 @@ class App extends Component {
           <Route path='/newPost' component={NewBlogPost} />
         </div>
       </Router>
+=======
+      <div className="App">
+      <h1>The Photo View</h1>
+      </div>
+>>>>>>> master
     );
   }
 }
