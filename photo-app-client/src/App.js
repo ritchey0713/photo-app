@@ -10,6 +10,7 @@ import About from './components/static/About.js'
 import NewBlogPost from './components/NewBlogPost.js'
 
 
+
 class App extends Component {
   render() {
     return (
