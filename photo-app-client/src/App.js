@@ -5,23 +5,16 @@ import { BrowserRouter  as Router, Route } from 'react-router-dom'
 
 import PostService from './services/PostService'
 import Home from './containers/Home.js'
+import { connect } from 'react-redux'
 import Contact from './components/static/Contact.js'
 import About from './components/static/About.js'
 import NewBlogPost from './components/NewBlogPost.js'
 import AllPosts from './containers/AllPosts.js'
-
+import { fetchPosts } from './actions/postActions.js'
 
 class App extends Component {
-  constructor(){
-      super()
-
-      this.state = {
-        posts: []
-      }
-    }
-
-    componentDidMount(){
-      PostService.fetchPosts().then(posts => this.setState({ posts }))
+  componentDidMount(){
+    this.props.fetchPosts()
     }
 
   render() {
@@ -39,5 +32,9 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {allPosts: state.posts}
+}
 
-export default App;
+
+export default connect (mapStateToProps, mapDispatchToProps)(App);
