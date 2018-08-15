@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter  as Router, Route } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
 import Home from './containers/Home.js'
 import Contact from './components/static/Contact.js'
@@ -14,6 +16,7 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path='/' component={Home} />
+          <Route path='/allPosts' component={Posts} />
           <Route path='/contact' component={Contact} />
           <Route path='/about' component={About} />
           <Route path='/newPost' component={NewBlogPost} />
