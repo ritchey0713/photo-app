@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Jumbotron from './Jumbotron'
 
-const Contact = () => {
+const About = (props) => {
     return(
       <div>
       <Navbar />
@@ -20,4 +20,4 @@ const Contact = () => {
   }
 
 
-export default Contact
+export default About

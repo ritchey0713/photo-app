@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import './JumboNewPost.css';
 
-const Jumbotron =(props) =>{
+const JumboNewPost = (props) =>{
 
     return(
       <div className="jumboNewPost jumbotron-fluid">
         <div className='container'>
-          <h1 className="display-3">{this.props.title}</h1>
-          <p className="lead">{this.props.subtitle}</p>
+          <h1 className="display-3">{props.title}</h1>
+          <p className="lead">{props.subtitle}</p>
         </div>
       </div>
     )
   }
 
-export default Jumbotron
+export default JumboNewPost

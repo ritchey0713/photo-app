@@ -1,7 +1,6 @@
 .jumboNewPost{
   background-image: url(../static/images/keyboard.jpeg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: white;
+  background-size: 50% auto;
+  color: 	#00BFFF;
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+
 import Navbar from '../components/static/Navbar'
 import Footer from '../components/static/Footer'
 import Jumbotron from '../components/static/Jumbotron'
+
 class Home extends Component {
   render(){
     return(
