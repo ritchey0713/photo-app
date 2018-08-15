@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom'
 
 const PostList = ({ posts }) => {
   const renderPosts = posts.map((post) =>
-    <h3 className="container"><Link to={`/posts/${post.id}`}>{post.title}
+<span>
+    <h3 className="container">
+      <Link to={`/posts/${post.id}`}>
+        {post.title}
       </Link>
-      <div>
-
-        {post.subtitle}
-
+      </h3>
+      <div className="container">
+        <h5>{post.subtitle}</h5>
       </div>
-    </h3>
+
+</span>
   )
 
   return(

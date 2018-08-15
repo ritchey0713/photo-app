@@ -13,7 +13,7 @@ class Home extends Component {
       <Jumbotron title="Welcome" subtitle="put something here?!"/>
         <div className="container">
           <h2>Welcome!</h2>
-            <p><Link classNmae="AllPosts" to={`/posts`}>Views the Postzzzzzz</Link></p>
+            <p><Link className="AllPosts" to={`/posts`}>Views the Postzzzzzz</Link></p>
         </div>
         <Footer />
       </div>
