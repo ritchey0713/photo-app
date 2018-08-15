@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Jumbotron from './Jumbotron'
-class Contact extends Component {
-  render(){
+
+const Contact = () => {
     return(
       <div>
       <Navbar />
@@ -18,6 +18,5 @@ class Contact extends Component {
       </div>
     )
   }
-}
 
 export default Contact

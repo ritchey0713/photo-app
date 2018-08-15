@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 
-class Navbar extends Component {
-  render(){
+const Navbar = () => {
+
     return(
       <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
       <Link className="navbar-brand" to="#">APP NAME GOES HERE!</Link>
@@ -18,7 +18,7 @@ class Navbar extends Component {
                 <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/posts">View Posts</Link>
+                <Link className="nav-link" to="/newPost">Create a Post!</Link>
               </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="https://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</Link>
@@ -34,6 +34,6 @@ class Navbar extends Component {
     </nav>
     )
   }
-}
+
 
 export default Navbar
