@@ -12,7 +12,7 @@ import App from './App';
 
 
 const initialState = {
-  movies: [
+  posts: [
     { id: 1, title: 'Hello World', subtitle: "goodbye!" },
     { id: 2, title: 'Harry Potter', subtitle: 'The boy' },
     { id: 3, title: 'Hunger the dog', subtitle: 'HE IS HUNGRY' }

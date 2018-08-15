@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import Navbar from '../components/static/Navbar'
 import Footer from '../components/static/Footer'
@@ -12,9 +13,7 @@ class Home extends Component {
       <Jumbotron title="Welcome" subtitle="put something here?!"/>
         <div className="container">
           <h2>Welcome!</h2>
-            <p>dlskfjlkasdfhlksajdbfnlkjasjhflkjsadhflkjsadhfkljasdhflkjshdfljk
-            skjdfbklsdhflkjsdahflkjsadhflkjsdhflkshdfkljhsdlfkhsdkljfhskjldfhjlkjsdh
-            sdkfjls;dfjls;kdfjl;ksdjf;lksdjf;lksdjf;lkdjsf;lkjsdak;lfjsa;dlkfj;klsadjfadkls;</p>
+            <p><Link classNmae="AllPosts" to={`/posts`}>Views the Postzzzzzz</Link></p>
         </div>
         <Footer />
       </div>
